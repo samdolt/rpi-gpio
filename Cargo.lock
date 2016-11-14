@@ -2,6 +2,7 @@
 name = "rpi-hello"
 version = "0.1.0"
 dependencies = [
+ "peripheral 0.1.0",
  "peripheral_linux 0.1.0",
 ]
 

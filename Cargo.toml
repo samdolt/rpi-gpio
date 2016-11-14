@@ -5,3 +5,4 @@ authors = ["Samuel Dolt <samuel@dolt.ch>"]
 
 [dependencies]
 peripheral_linux = { path = "../peripheral-linux/" }
+peripheral = { path = "../peripheral/"}
