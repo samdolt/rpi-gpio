@@ -1,0 +1,7 @@
+[package]
+name = "rpi-hello"
+version = "0.1.0"
+authors = ["Samuel Dolt <samuel@dolt.ch>"]
+
+[dependencies]
+peripheral_linux = { path = "../peripheral-linux/" }
