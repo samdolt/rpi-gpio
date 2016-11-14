@@ -16,6 +16,7 @@ fn main() {
     let mut gpio = GPIO::new(26).unwrap();
 
     loop {
+        gpio.set_to_output().unwrap();
         gpio.set_high().unwrap();
         wait();
         gpio.set_low().unwrap();
