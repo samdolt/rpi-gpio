@@ -13,7 +13,7 @@ use std::io::Write;
 use spidev::{Spidev, SpidevOptions, SpidevTransfer, SPI_MODE_0};
 
 fn wait() {
-    sleep(Duration::from_millis(1000));
+    sleep(Duration::from_millis(100));
 }
 
 fn main() {
@@ -30,7 +30,10 @@ fn main() {
     out_en.set_to_output().unwrap();
     out_en.set_high().unwrap();
 
-    spi.write(&[0xF0]);
+    wait();
+
+    spi.write(&[0xF0]).unwrap();
+
 
     loop {
     }
