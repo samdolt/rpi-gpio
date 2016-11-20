@@ -32,9 +32,9 @@ fn main() {
 
     wait();
 
-    spi.write(&[0xF0]).unwrap();
 
 
     loop {
+        spi.write(&[0xF0]).unwrap();
     }
 }
