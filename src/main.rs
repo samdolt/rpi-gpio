@@ -23,7 +23,7 @@ fn main() {
     let mut spi = Spidev::open("/dev/spidev0.1").unwrap();
     let mut options = SpidevOptions::new();
     options.bits_per_word(8);
-    options.max_speed_hz(20_000);
+    options.max_speed_hz(1_000);
     options.mode(SPI_MODE_0);
     spi.configure(&options).unwrap();
 
