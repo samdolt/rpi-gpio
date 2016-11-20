@@ -18,7 +18,7 @@ fn wait() {
 
 fn main() {
 
-    let mut out_en = GPIO::new(22).unwrap();
+    let mut out_en = GPIO::new(25).unwrap();
 
     let mut spi = Spidev::open("/dev/spidev0.1").unwrap();
     let mut options = SpidevOptions::new();
